@@ -1,16 +1,58 @@
-# React + Vite
+# 🌍 World Atlas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **World Atlas** project! This is a modern, responsive React-based web application that allows users to explore detailed information about countries around the globe.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Country Explorer**: Browse all countries and their flags in an elegant grid layout.
+- **Search Capabilities**: Find specific countries easily using a dynamic search bar.
+- **Sorting**: Filter countries in ascending and descending alphabetical orders.
+- **Detailed Country Views**: View in-depth details of any country including Population, Region, Capital, Languages, Currencies, and Sub-regions.
+- **Fast & Responsive**: Fully responsive UI tailored seamlessly for mobile, tablet, and desktop viewing.
 
-## React Compiler
+## 🚀 Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: React 19 + Vite
+- **Styling**: Tailwind CSS
+- **Routing**: React Router DOM (v7)
+- **API**: [REST Countries API](https://restcountries.com/)
+- **Forms & Validation**: Formik & Yup
+- **Icons**: React Icons
+- **HTTP Client**: Axios
 
-## Expanding the ESLint configuration
+## 📦 Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If you want to run this project locally, simply follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/SwarajPrajapati2006/World-Atlas.git
+   cd World-Atlas
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**:
+   Navigate to `http://localhost:5173` to explore the atlas.
+
+## 🛠 Project Structure
+
+- `src/components`: Reusable UI components.
+- `src/pages`: Distinct application views (Home, About, Country, CountryDetail, Contact).
+- `src/api`: Axios integration and endpoints.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/SwarajPrajapati2006/World-Atlas/issues).
+
+---
+
+*Crafted with passion for exploring the world.* 🌎
