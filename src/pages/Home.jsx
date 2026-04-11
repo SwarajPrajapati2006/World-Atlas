@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 const Home = () => {
   return (
      <>
-    <main className='w-full min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-br from-gray-950 via-black to-gray-900 px-6 relative overflow-hidden'>
+    <main className='w-full min-h-[calc(100vh-4rem)] flex items-center justify-center bg-linear-to-br from-gray-950 via-black to-gray-900 px-6 relative overflow-hidden'>
       {/* Background decorative elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
@@ -21,7 +21,7 @@ const Home = () => {
           
           <h1 className='text-4xl md:text-6xl font-bold text-white leading-tight'>
             Explore the World, <br />
-            <span className='bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent'>One Country at a Time</span>
+            <span className='bg-linear-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent'>One Country at a Time</span>
           </h1>
 
           <h2 className='text-lg md:text-xl text-gray-400 leading-relaxed'>
@@ -29,7 +29,7 @@ const Home = () => {
           </h2>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-            <button className='px-8 py-4 bg-gradient-to-r from-blue-500 to-pink-500 text-white rounded-xl shadow-lg hover:shadow-pink-500/25 hover:scale-105 transition-all duration-300 font-semibold'>
+            <button className='px-8 py-4 bg-linear-to-r from-blue-500 to-pink-500 text-white rounded-xl shadow-lg hover:shadow-pink-500/25 hover:scale-105 transition-all duration-300 font-semibold'>
               <NavLink to="/country" >Get Started</NavLink> 
             </button>
             <button className='px-8 py-4 bg-white/5 border border-white/20 text-white rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-300 font-semibold'>
@@ -44,7 +44,7 @@ const Home = () => {
           <img 
             src={earth} 
             alt="Earth" 
-            className='w-72 md:w-96 lg:w-[28rem] drop-shadow-[0_0_50px_rgba(59,130,246,0.4)] rounded-full relative z-10 animate-pulse-slow'
+            className='w-72 md:w-96 lg:w-md drop-shadow-[0_0_50px_rgba(59,130,246,0.4)] rounded-full relative z-10 animate-pulse-slow'
           />
         </div>
 

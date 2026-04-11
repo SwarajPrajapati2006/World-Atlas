@@ -3,7 +3,7 @@ import countryFacts from "../api/countryapi.json"
 
 const About = () => {
   return (
-    <main className="bg-gradient-to-b from-black via-gray-950 to-black min-h-screen py-16 px-4">
+    <main className="bg-linear-to-b from-black via-gray-950 to-black min-h-screen py-16 px-4">
 
       {/* Heading */}
       <div className="text-center mb-16">
@@ -23,7 +23,7 @@ const About = () => {
           return (
             <div
               key={values.id}
-              className="group bg-gradient-to-br from-gray-900 to-gray-950 text-white p-6 rounded-2xl border border-gray-800 hover:border-pink-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/10 hover:-translate-y-2"
+              className="group bg-linear-to-br from-gray-900 to-gray-950 text-white p-6 rounded-2xl border border-gray-800 hover:border-pink-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/10 hover:-translate-y-2"
             >
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl font-bold text-pink-400 group-hover:text-pink-300 transition-colors">

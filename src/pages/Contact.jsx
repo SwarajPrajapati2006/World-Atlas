@@ -31,14 +31,14 @@ const Contact = () => {
   })
 
   return (
-    <main className='min-h-screen bg-gradient-to-br from-gray-950 via-black to-gray-900 flex justify-center items-center px-4 py-12 relative overflow-hidden'>
+    <main className='min-h-screen bg-linear-to-br from-gray-950 via-black to-gray-900 flex justify-center items-center px-4 py-12 relative overflow-hidden'>
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
 
       <form
         onSubmit={formik.handleSubmit}
-        className='relative z-10 w-full max-w-md bg-gradient-to-br from-gray-900/80 to-gray-950/80 backdrop-blur-lg p-8 rounded-3xl border border-gray-800 shadow-2xl'
+        className='relative z-10 w-full max-w-md bg-linear-to-br from-gray-900/80 to-gray-950/80 backdrop-blur-lg p-8 rounded-3xl border border-gray-800 shadow-2xl'
       >
         <div className="text-center mb-8">
           <h2 className='text-3xl font-bold text-white mb-2'>
@@ -109,7 +109,7 @@ const Contact = () => {
         {/* BUTTON */}
         <button
           type='submit'
-          className='w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-pink-500/25 hover:scale-[1.02] transition-all duration-300'
+          className='w-full bg-linear-to-r from-pink-500 to-purple-600 text-white py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-pink-500/25 hover:scale-[1.02] transition-all duration-300'
         >
           Send Message
         </button>

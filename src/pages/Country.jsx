@@ -27,7 +27,7 @@ const Country = () => {
   );
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-950 via-black to-gray-950 py-10 px-4">
+    <section className="min-h-screen bg-linear-to-br from-gray-950 via-black to-gray-950 py-10 px-4">
 
       {/* 🔄 Loader */}
       {isPending && (
@@ -58,7 +58,7 @@ const Country = () => {
             </div>
 
             <button
-              className="px-5 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl shadow-lg hover:shadow-green-500/25 hover:scale-105 transition-all duration-300 font-medium"
+              className="px-5 py-3 bg-linear-to-r from-green-500 to-emerald-600 text-white rounded-xl shadow-lg hover:shadow-green-500/25 hover:scale-105 transition-all duration-300 font-medium"
               onClick={() => {
                 const sorted = [...country].sort((a, b) =>
                   a.name.common.localeCompare(b.name.common)
@@ -70,7 +70,7 @@ const Country = () => {
             </button>
 
             <button
-              className="px-5 py-3 bg-gradient-to-r from-pink-500 to-rose-600 text-white rounded-xl shadow-lg hover:shadow-pink-500/25 hover:scale-105 transition-all duration-300 font-medium"
+              className="px-5 py-3 bg-linear-to-r from-pink-500 to-rose-600 text-white rounded-xl shadow-lg hover:shadow-pink-500/25 hover:scale-105 transition-all duration-300 font-medium"
               onClick={() => {
                 const desc = [...country].sort((a, b) =>
                   b.name.common.localeCompare(a.name.common)
@@ -108,7 +108,7 @@ const Country = () => {
               filterData.map((val, idx) => (
                 <div
                   key={idx}
-                  className="group bg-gradient-to-br from-gray-900/80 to-gray-950/80 backdrop-blur-lg border border-gray-800 text-white rounded-2xl overflow-hidden shadow-lg hover:shadow-pink-500/20 hover:border-pink-500/30 hover:-translate-y-2 transition-all duration-300"
+                  className="group bg-linear-to-br from-gray-900/80 to-gray-950/80 backdrop-blur-lg border border-gray-800 text-white rounded-2xl overflow-hidden shadow-lg hover:shadow-pink-500/20 hover:border-pink-500/30 hover:-translate-y-2 transition-all duration-300"
                 >
                   <div className="relative h-44 overflow-hidden">
                     <img
@@ -116,7 +116,7 @@ const Country = () => {
                       alt={val.name?.common}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-transparent to-transparent"></div>
                     {val.flag && (
                       <span className="absolute top-3 right-3 text-3xl drop-shadow-lg">{val.flag}</span>
                     )}
@@ -149,7 +149,7 @@ const Country = () => {
 
                     <button
                       onClick={() => handleReadMore(val)}
-                      className="w-full bg-gradient-to-r from-pink-500 to-purple-600 py-2.5 rounded-xl text-sm font-medium hover:shadow-lg hover:shadow-pink-500/25 hover:scale-[1.02] transition-all duration-300"
+                      className="w-full bg-linear-to-r from-pink-500 to-purple-600 py-2.5 rounded-xl text-sm font-medium hover:shadow-lg hover:shadow-pink-500/25 hover:scale-[1.02] transition-all duration-300"
                     >
                       Read more
                     </button>
