@@ -2,12 +2,18 @@ import React from 'react'
 import About from './About'
 import earth from "../../src/assets/earth.png"
 import { NavLink } from 'react-router-dom'
+import {Helmet} from "react-helmet"
 
 const Home = () => {
   return (
      <>
     <main className='w-full min-h-[calc(100vh-4rem)] flex items-center justify-center bg-linear-to-br from-gray-950 via-black to-gray-900 px-6 relative overflow-hidden'>
       {/* Background decorative elements */}
+
+       <Helmet>
+        <title>Home page  </title>
+        <meta name="Atlas " content="Learn coding with World map" />
+      </Helmet>
       <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
       
